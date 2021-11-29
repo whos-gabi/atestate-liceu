@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Proiect Economie</title>
 </head>
 <script src="index.js"></script>
 
 <body>
 
-    <h2 style="text-align:center">Create your own table</h2>
+    <h2 style="text-align:center">Consumatorul</h2>
+    <div class="col">
+        <!-- project  -->
+        <br>
+        <hr>
+        <h3>Introduceti datele:</h3>
+        <p class="txt">Pret X</p>
+        <input class="input-s" type="text" id="px" name="px" Value="2"/>  <br>
+        <p class="txt">Pret Y</p>
+        <input class="input-s" type="text" id="py" name="py" Value="1"/> <br>
+        <p class="txt">Suma</p>
+        <input class="input-s" type="text" id="sum" name="sum"  Value="9" /> <br>
+        <p class="txt">Nr. de Utilitati Marginale</p>
+        <input class="input-s" type="number" id='nr_rand' Value="5"/> <br>
+        <p class="txt">Valori UMGX</p>
+        <input class="input-s" type="text" id="umgx" Value="10 8 6 4 2" /> <br>
+        <p class="txt">Valori UMGY</p>
+        <input class="input-s" type="text" id="umgy" Value="8 7 6 5 4" />
+        <br>
+        <!-- <input type="button" id="button1" value="Adauga" onclick="add_element_to_array();"></input> -->
+        <button class="input-s btn-1" id='submit'>CALCULEAZA!</button>
 
-    <!-- project  -->
-    <br>
-    <hr>
-    <h3>introduceti datele</h3>
-    <input class="input-s" type="text" id="px" name="px" placeholder="pret x" />
-    <input class="input-s" type="text" id="py" name="py" placeholder="pret y" />
-    <input class="input-s" type="text" id="sum" name="sum" placeholder="suma" />
-    <!-- <input type="text" id="num2" name="num2" /> -->
-    <input class="input-s" type="number" id='nr_rand' placeholder="Nr. de Utilitati Marginale">
+        <div id="error"></div>
 
-    <button id='submit'>Create Now!</button>
+        <hr>
+        <div id='container'></div>
 
-    <br />
-    <!-- old button -->
-    <!-- <input type="button" value="Solve" onclick="read()" /> -->
-    <br>
-    <!-- old result -->
-    <!-- <p id="result" name="r1">
-        <br />
-    </p> -->
-
-    <input type="text" id="umgx" placeholder="X"></input><br><br>
-    <input type="text" id="umgy" placeholder="Y"></input>
-    <input type="button" id="button1" value="Adauga" onclick="add_element_to_array();"></input>
-    <div id="error"></div>
-
-    <hr>
-    <div id='container'></div>
-
+        <br>
+        <hr>
+        <h4>Rezultate:</h4>
+        <div id='result'></div>
+    </div>
     <script>
 
-        tabel();
+        main();
         // calc();
 
     </script>
