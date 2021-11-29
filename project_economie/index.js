@@ -118,7 +118,7 @@ function main() {
         (suma -= py), iy++;
       }
     }
-    console.log("output generated: " + res);
+    // console.log("output generated: " + res);
 
     document.getElementById("result").innerHTML =
       res + "in total " + (ix - 1) + " de x si " + (iy - 1) + " de y";
