@@ -38,8 +38,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font: 16px/1.5 sans-serif; */
-}
+  font: 16px/1.5 sans-serif; 
+}*/
 
 .btn-group {
   text-align: center;
@@ -47,11 +47,11 @@ body {
 
 .open-modal {
   font-weight: bold;
-  background: var(--blue);
-  color: var(--white);
-  padding: 0.75rem 1.75rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
+  /* background: var(--blue);
+  color: var(--white); */
+  /* padding: 0.75rem 1.75rem; */
+  /* margin-bottom: 1rem; */
+  /* border-radius: 40px !important;  */
 }
 
 
