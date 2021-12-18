@@ -16,33 +16,27 @@ Table Of Contents:
 - Media Queries
 ******************************************/
 
-:root{
-
-	--color-code-background: #272822;
-	--color-code-color: #80ff7c;
+:root {
+  --color-code-background: #272822;
+  --color-code-color: #64ff5f;
+}
+a {
+    display: block;
 }
 
+.modal-content{
+	background-color:var(--bs-gray-700);
+}
 code {
-    background-color: var(--color-code-background);
-    color: var(--color-code-color);
-    /* border-radius: 0.3rem; */
-    /* padding: 4px 5px 5px; */
-    /* white-space: nowrap; */
+	font-family:Arial, Helvetica, sans-serif;
+  /* background-color: var(--color-code-background); */
+  color: var(--color-code-color);
+  padding: 4px 5px 5px;
 }
-/* 
-pre code {
-  white-space: inherit;
-}
-
-pre {
-  background-color: var(color-code-background) !important;
-  padding: 5px;
-  border-radius: 0.3em;
-} */
 
 .card {
   border: 1px solid rgb(255, 255, 255);
-} 
+}
 
 /**************************/
 /*     General Styles     */
@@ -90,14 +84,17 @@ li {
 }
 
 /* Section Background */
-.home,
 .about,
 .services,
 .plans,
 .work,
 .contact {
-  height: 130vh;
+  /* height: 130vh; */
   position: relative;
+}
+
+.home{
+  height: 130vh;
 }
 
 .services,
@@ -165,10 +162,10 @@ li {
   background-color: var(--primary);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
-.navbar-brand{
-	font-weight: bold;
-	font-size: 1.6rem;
-	line-height: 1rem;
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1rem;
 }
 
 .navbar .navbar-brand {
@@ -326,6 +323,7 @@ li {
 /******************/
 /*     Button     */
 /******************/
+/* 
 .btn {
   color: white;
   border-radius: 0;
@@ -346,7 +344,6 @@ li {
   transform: translate(5px, 5px);
 }
 
-/* Email - Newsletter Button */
 .btn-secondary {
   color: black;
   border-width: 2px;
@@ -361,7 +358,7 @@ li {
   color: black;
   padding: 10px 30px;
   background-image: var(--gradient);
-}
+} */
 
 /* Other Pages Button */
 .btn-tertiary {

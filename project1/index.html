@@ -5,19 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
     <!-- Webpage Title -->
     <title>Matrici si vectori</title>
 
@@ -25,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="./css/aos.min.css" rel="stylesheet">
     <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -98,9 +85,7 @@
         <div class="container text-light py-5" data-aos="fade-right">
             <h1 class="headline">Matrici <span class="home_text">si</span><br>Vectori</h1>
 
-            <div class="my-3">
-                <a class="btn" href="#plans">Vizualizeaza</a>
-            </div>
+
         </div> <!-- end of container -->
     </section> <!-- end of home -->
 
@@ -109,16 +94,18 @@
     <section class="information">
         <div class="container-fluid">
             <div class="row text-light">
-                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                <div onclick="location.href='index.html#services1';" style="cursor: pointer; "
+                    class="col-lg-4 text-center p-5" data-aos="zoom-in">
                     <i class="fas fa-hashtag fa-3x p-2"></i>
                     <h3 class="py-3">Matrici</h3>
-
                 </div>
-                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                <div onclick="location.href='index.html#services';" style="cursor: pointer;"
+                    class="col-lg-4 text-center p-5" data-aos="zoom-in">
                     <i class="fas  fa-forward fa-3x p-2"></i>
                     <h3 class="py-3">Vectori</h3>
                 </div>
-                <div class="col-lg-4 text-center p-5 text-dark" data-aos="zoom-in">
+                <div onclick="location.href='index.html#algoritmi';" style="cursor: pointer;"
+                    class="col-lg-4 text-center p-5 text-dark" data-aos="zoom-in">
                     <i class="fas fa-sync fa-3x p-2"></i>
                     <h3 class="py-3">Algoritmi</h3>
                 </div>
@@ -191,46 +178,97 @@
             <div class="text-center pb-4">
                 <p>C++</p>
                 <h2 class="py-2">Implementarea vectorului in C++</h2>
-
+                <br>
             </div>
             <div class="row gy-4" data-aos="zoom-in">
                 <div class="col-lg-3">
                     <div class="card bg-transparent px-4">
                         <h4 class="py-2">Declararea vectorului</h4>
-                        <!-- <code style="width: 100%; height: 400px;">
-                                //Sintaxa este:
-                                //tip_elemente_vector nume_vector [dimensiune_maxima_vector];
-                                int x[100];// tipul elementelor vectorului este int iar dimensiunea maxima 100
-                                double a[50];
-                                char s[1000];
-                        </code> -->
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=133%25&si=false&es=4x&wm=false&code=%252F%252FSintaxa%2520este%253A%250A%252F%252Ftip_elemente_vector%2520nume_vector%2520%255Bdimensiune_maxima_vector%255D%253B%250Aint%2520x%255B100%255D%253B%252F%252F%2520tipul%2520elementelor%2520vectorului%2520este%2520int%2520iar%2520dimensiunea%2520maxima%2520100%250Adouble%2520a%255B50%255D%253B%250Achar%2520s%255B1000%255D%253B"
-                            style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Declararea vectorului</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                            <pre>
+//Sintaxa este:
+//tip_elemente_vector nume_vector 
+[dimensiune_maxima_vector];
+// tipul elementelor vectorului este
+// int iar dimensiunea maxima 100
+int x[100];
+double a[50];
+char s[1000];
+                                            </pre>
+                                        </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
                 <div class="col-lg-3">
                     <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Inițializarea vectorilor
-                        </h4>
-                        <!-- <code style="width: 100%; height: 400px;">
-                                //Fiecare element al vectorului este o variabilă separată, care poate fi atribuită, citită sau scrisă întocmai ca o variabilă de tipul vectorului.
-                                //Exemple:
-                                int v[4]={5, 6, 10, 21}; // inițializarea la declarare
-                                int numere[50];
-                                for(i=0;i < numar_numere;i++)
-                                { numere[i]=i; } // inițializarea la atribuire
-                                v[3] = 30; // atribuirea
-                                v[i] = v[i] + 1; // atribuirea
-                        </code> -->
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=133%25&si=false&es=4x&wm=false&code=%252F%252FFiecare%2520element%2520al%2520vectorului%2520este%2520o%2520variabil%25C4%2583%2520separat%25C4%2583%252C%2520care%2520poate%2520fi%2520atribuit%25C4%2583%252C%2520citit%25C4%2583%2520sau%2520scris%25C4%2583%2520%25C3%25AEntocmai%2520ca%2520o%2520variabil%25C4%2583%2520de%2520tipul%2520vectorului.%250A%252F%252FExemple%253A%250Aint%2520v%255B4%255D%253D%257B5%252C%25206%252C%252010%252C%252021%257D%253B%2520%252F%252F%2520ini%25C8%259Bializarea%2520la%2520declarare%250Aint%2520numere%255B50%255D%253B%250Afor%28i%253D0%253Bi%253Cnumar_numere%253Bi%252B%252B%29%250A%257B%2520numere%255Bi%255D%253Di%253B%2520%257D%2520%252F%252F%2520ini%25C8%259Bializarea%2520la%2520atribuire%250Av%255B3%255D%2520%253D%252030%253B%2520%252F%252F%2520atribuirea%250Av%255Bi%255D%2520%253D%2520v%255Bi%255D%2520%252B%25201%253B%2520%252F%252F%2520atribuirea"
-                            style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <h4 class="py-2">Inițializarea vectorilor</h4>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Inițializarea vectorilor</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                       <pre>
+//Fiecare element al vectorului este o variabilă 
+//separată, care poate fi atribuită, citită sau 
+//scrisă întocmai ca o variabilă de tipul vectorului.
+//Exemple:
+int v[4]={5, 6, 10, 21}; // inițializarea la declarare
+int numere[50];
+for(i=0;i < numar_numere;i++)
+{ numere[i]=i; } // inițializarea la atribuire
+v[3] = 30; // atribuirea
+v[i] = v[i] + 1; // atribuirea
+                                       </pre>
+                                   </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -240,12 +278,80 @@
                     <div class="card bg-transparent px-4">
                         <h4 class="py-2">Citirea Vectorilor</h4>
                         <br>
-                        <!-- <cos -->
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=133%25&si=false&es=4x&wm=false&code=int%2520a%255B100%255D%253B%252F%252Fun%2520vector%2520de%2520maxim%2520100%2520elemente%250Aint%2520main%28%29%250A%257B%2520int%2520n%252Ci%253B%250A%2520cout%253C%253C%25E2%2580%259Dn%253D%2520%25E2%2580%259D%253B%2520cin%253E%253En%253B%2520%252F%252Fn%2520este%2520lungimea%2520vectorului%250Afor%28i%253D0%253Bi%253Cn%253Bi%252B%252B%29%250A%257B%250Acout%253C%253C%25E2%2580%259Da%255B%2520%25E2%2580%259D%253C%253Ci%253C%253C%25E2%2580%259D%255D%253D%2520%25E2%2580%259C%253B%2520%252F*se%2520afiseaza%2520numarul%2520de%2520ordine%2520al%2520elementului%252C%2520care%250Aeste%2520cu%25201%2520mai%2520mare%2520decat%2520indicele%2520*%252F%250Acin%253E%253Ea%255Bi%255D%253B%250A%257D%250A%2520return%25200%253B%2520%257D%250A%252F*Explica%25C8%259Bie%250AAici%2520indicii%2520tabloului%2520sunt%250A0%252C%25201%2520%252C2%252C%2520%25E2%2580%25A6%252099.%250ADeci%2520daca%2520tabloul%2520are%2520n%250Aelemente%2520atunci%2520primul%250Aindice%2520este%25200%252C%2520iar%2520ultimul%250Aindice%2520este%2520n-1%253B*%252F%250Aint%2520a%255B100%255D%253B%2520%252F%252Fun%2520vector%2520de%2520maxim%2520100%2520elemente%250Aint%2520main%28%29%250A%257B%2520int%2520n%252Ci%253B%250A%2520cout%253C%253C%25E2%2580%259Dn%253D%2520%25E2%2580%259D%253B%2520cin%253E%253En%253B%2520%252F%252Fn%2520este%2520lungimea%2520vectorului%250Afor%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%257B%250Acout%253C%253C%25E2%2580%259Da%255B%2520%25E2%2580%259D%253C%253Ci%253C%253C%25E2%2580%259D%255D%253D%2520%25E2%2580%259C%253B%2520%252F%252Fse%2520afiseaza%2520numarul%2520de%2520ordine%2520al%2520elementului%252C%250Acin%253E%253Ea%255Bi%255D%253B%250A%257D%250A%2520return%25200%253B%250A%257D%250A%252F*Aici%2520indicii%2520tabloului%2520sunt%250A1%252C%25202%2520%252C%25E2%2580%25A6%252099%252C%2520100.%250ADeci%2520daca%2520tabloul%2520are%2520n%250Aelemente%2520atunci%2520primul%250Aindice%2520de%2520la%2520care%2520pornim%250Aeste%25201%252C%2520iar%2520ultimul%2520indice%250Aeste%2520n%252C%2520de%25C8%2599i%2520este%2520si%2520elementul%2520de%2520indice%25200%2520dar%2520pe%250Acare%2520nu%2520%25C3%25AEl%2520folosim%253B*%252F%250A"
-                            style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Citirea Vectorilor</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                       <pre>
+int a[100];//un vector de maxim 100 elemente
+int main()
+{ int n,i;
+ //n este lungimea vectorului
+ cout<<”n= ”; cin>>n; 
+for(i=0;i < n;i++)
+{
+cout<<”a[ ”<< i << ”]= “;
+/*se afiseaza numarul de ordine al 
+elementului, care este cu 1 mai 
+mare decat indicele */
+cin>>a[i];
+}
+ return 0; }
+/*Explicație
+Aici indicii tabloului sunt
+0, 1 ,2, … 99.
+Deci daca tabloul are n
+elemente atunci primul
+indice este 0, iar ultimul
+indice este n-1;*/
+//un vector de maxim 100 elemente
+int a[100];
+int main()
+{ int n,i;
+ //n este lungimea vectorului
+ cout<<”n= ”; cin>>n; 
+for(i=1;i<=n;i++)
+{
+//se afiseaza numarul de ordine al elementului,
+cout<<”a[ ”<< i << ”]= “;
+cin>>a[i];
+}
+ return 0;
+}
+/*Aici indicii tabloului sunt
+1, 2 ,… 99, 100.
+Deci daca tabloul are n
+elemente atunci primul
+indice de la care pornim
+este 1, iar ultimul indice
+este n, deși este si elementul de indice 0 dar pe
+care nu îl folosim;*/
+                                       </pre>
+                                   </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -253,11 +359,71 @@
                     <div class="card bg-transparent px-4">
                         <h4 class="py-2">Afişarea vectorilor</h4>
                         <br>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=133%25&si=false&es=4x&wm=false&code=%252F%252FAfi%25C8%2599area%2520valorilor%2520vectorului%2520este%2520similar%25C4%2583%2520cu%2520citirea.%2520Vom%2520scrie%2520%25C3%25AEn%2520fi%25C8%2599ierul%2520de%2520ie%25C8%2599ire%2520fiecare%2520valoare%252C%2520pe%250A%252F%252Fr%25C3%25A2nd%253A%2520de%2520la%25200%2520la%2520n-1%2520sau%2520de%2520la%25201%2520la%2520n.%250Aint%2520a%255B100%255D%253B%250Aint%2520main%28%29%250A%257B%2520int%2520n%252Ci%253B%250A%25E2%2580%25A6%25E2%2580%25A6.%250Afor%28i%253D0%253Bi%253Cn%253Bi%252B%252B%29%250A%257B%250Acout%253C%253Ca%255Bi%252B1%255D%253C%253C%25E2%2580%259D%2520%25E2%2580%259D%253B%250A%257D%250A%2520return%25200%253B%250A%257D%250A%252F%252FExplica%25C8%259Bie%250A%252F%252FAici%2520indicii%2520tabloului%2520sunt%25200%252C1%252C2%252C%25E2%2580%25A699.%250A%252F%252FDeci%2520daca%2520tabloul%2520are%2520n%2520elemente%2520atunci%2520primul%2520indice%2520este%25200%252C%2520iar%2520ultimul%2520indice%2520este%2520n-1%253B%250Aint%2520a%255B100%255D%253B%250Aint%2520main%28%29%250A%257B%2520int%2520n%252Ci%253B%250A%25E2%2580%25A6%25E2%2580%25A6.%250Afor%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%257B%250Acout%253C%253Ca%255Bi%255D%253C%253C%25E2%2580%259D%2520%25E2%2580%259D%253B%250A%257D%250A%2520return%25200%253B%250A%257D%250A%252F%252FAici%2520indicii%2520tabloului%2520sunt%25201%252C2%252C%25E2%2580%25A699%252C100.%250A%252F%252FDeci%2520daca%2520tabloul%2520are%2520n%2520elemente%2520atunci%2520primul%2520indice%2520de%2520la%2520care%250A%252F%252Fpornim%2520este%25201%252C%2520iar%2520ultimul%2520indice%2520este%2520n%252C%2520de%25C8%2599i%2520este%2520si%2520elementul%2520de%2520indice%25200%2520dar%2520pe%2520care%2520nu%2520%25C3%25AEl%2520folosim%253B"
-                            style="width: 100%; height: 400px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Afişarea vectorilor</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                    <pre>
+//Afișarea valorilor vectorului este
+// similară cu citirea. Vom scrie în
+// fișierul de ieșire fiecare valoare, pe
+//rând: de la 0 la n-1 sau de la 1 la n.
+int a[100];
+int main()
+{ int n,i;
+…….
+for(i=0;i< n;i++)
+{
+cout<< a[i+1] << ” ”;
+}
+ return 0;
+}
+//Explicație
+//Aici indicii tabloului sunt 0,1,2,…99.
+//Deci daca tabloul are n elemente atunci
+// primul indice este 0, iar ultimul indice este n-1;
+int a[100];
+int main()
+{ int n,i;
+…….
+for(i=1;i<=n;i++)
+{
+cout<< a[i] << ” ”;
+}
+ return 0;
+}
+//Aici indicii tabloului sunt 1,2,…99,100.
+//Deci daca tabloul are n elemente atunci 
+//primul indice de la care
+//pornim este 1, iar ultimul indice este n,
+//deși este si elementul de indice 0 dar pe care nu îl folosim;
+                                    </pre>
+                                </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div> <!-- end of row -->
@@ -266,12 +432,9 @@
 
 
     <!-- Plans -->
-    <section class="testimonial d-flex align-items-center py-5" id="services1">
+    <section class="testimonial d-flex align-items-center p-5" id="services1">
         <div class="container text-light">
             <div class="text-center pb-4">
-                <br>
-                <br>
-                <br>
 
                 <p>C++</p>
                 <h2 class="py-2">Implementarea matricelor în C++<h2>
@@ -279,51 +442,216 @@
             </div>
             <div class="row gy-4" data-aos="zoom-in">
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
+                    <div class="card bg-transparent p-4">
                         <h4 class="py-2">Declararea matricelor</h4>
 
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=133%25&si=false&es=4x&wm=false&code=%252F*Declararea%2520unei%2520matrice%2520este%2520similar%25C4%2583%2520cu%2520cea%2520a%2520unui%2520vector.%250ADiferen%25C8%259Ba%2520este%2520c%25C4%2583%2520la%2520matrice%2520trebuie%2520s%25C4%2583%2520specific%25C4%2583m%2520ambele%2520dimensiuni%2520%28maxime%29%253A%2520%250Atip%2520nume%255BMMAX%255D%255BNMAX%255D%253B%250AMMAX%2520este%2520num%25C4%2583rul%2520maxim%2520de%2520linii%252C%2520%250Aiar%2520NMAX%2520este%2520num%25C4%2583rul%2520maxim%2520de%2520coloane.%2520%250A%25C3%258En%2520urma%2520acestei%2520instruc%25C8%259Biuni%252C%2520%250Acalculatorul%2520va%2520aloca%2520o%2520secven%25C8%259B%25C4%2583%2520liniar%25C4%2583%2520de%2520memorie%252C%250Aformat%25C4%2583%2520din%2520MMAX%2520*%2520NMAX%2520elemente%2520de%2520tipul%2520tip.%2520%250ADa%252C%2520chiar%2520dac%25C4%2583%2520noi%2520percepem%2520matricea%2520drept%2520un%2520obiect%2520bidimensional%252C%250Acalculatorul%2520o%2520vede%2520liniar%252C%2520pentru%2520c%25C4%2583%2520a%25C8%2599a%2520func%25C8%259Bioneaz%25C4%2583%2520memoria%2520lui.*%252F"
-                            style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dv1">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="dv1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Declararea matricelor</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                         <pre>
+/*Declararea unei matrice este similară cu 
+cea a unui vector. Diferența este că la
+matrice trebuie să specificăm 
+ambele dimensiuni (maxime): 
+tip nume[MMAX][NMAX];
+MMAX este numărul maxim de linii, 
+iar NMAX este numărul maxim de coloane. 
+În urma acestei instrucțiuni, calculatorul 
+va aloca o secvență liniară de memorie,
+formată din MMAX * NMAX elemente de tipul tip. 
+Da, chiar dacă noi percepem matricea 
+drept un obiect bidimensional,
+calculatorul o vede liniar, 
+pentru că așa funcționează memoria lui.*/
+                                         </pre>
+                                     </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
-                        <h4 class="py-2"> Parcurgerea unei matrice în C++
-                        </h4>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=133%25&si=false&es=4x&wm=false&code=%252F*Pentru%2520a%2520parcurge%2520o%2520matrice%2520linie%2520cu%2520linie%2520%25C8%2599i%2520coloan%25C4%2583%2520cu%2520coloan%25C4%2583%2520%28%25C3%25AEn%2520cadrul%2520fiec%25C4%2583rei%2520linii%29%2520folosim%2520dou%25C4%2583%2520for-uri%2520imbricate%2520%25C8%2599i%2520doi%2520iteratori%253A%2520i%2520pentru%2520linie%2520%25C8%2599i%2520j%2520pentru%2520coloan%25C4%2583.%2520Iat%25C4%2583%2520un%2520program%2520%25C3%25AEn%2520C%252B%252B%2520care%2520cite%25C8%2599te%2520%25C8%2599i%2520afi%25C8%2599eaz%25C4%2583%2520elementele%2520unei%2520matrice%2520cu%2520m%2520linii%2520%25C8%2599i%2520n%2520coloane%253A*%252F%250A%2523include%2520%253Ciostream%253E%250Ausing%2520namespace%2520std%253B%250A%250A%2523define%2520MMAX%2520314%2520%252F%252F%2520num%25C4%2583rul%2520maxim%2520de%2520linii%250A%2523define%2520NMAX%2520618%2520%252F%252F%2520num%25C4%2583rul%2520maxim%2520de%2520coloane%250A%250Aint%2520m%252C%2520n%253B%2520%252F%252F%2520num%25C4%2583rul%2520de%2520linii%2520%25C8%2599i%2520num%25C4%2583rul%2520de%2520coloane%250Aint%2520mat%255BMMAX%255D%255BNMAX%255D%253B%2520%252F%252F%2520matricea%250A%250Aint%2520main%28%29%2520%257B%250A%2520%2520%2520%2520int%2520i%252C%2520j%253B%2520%252F%252F%2520iteratorii%2520pentru%2520linie%2520%25C8%2599i%2520coloan%25C4%2583%250A%2520%2520%2520%2520cin%2520%253E%253E%2520m%2520%253E%253E%2520n%253B%2520%252F%252F%2520citirea%2520dimensiunilor%2520matricei%250A%250A%2520%2520%2520%2520%252F%252F%2520citirea%2520elementelor%2520matricei%250A%2520%2520%2520%2520for%2520%28i%2520%253D%25200%253B%2520i%2520%253C%2520m%253B%2520i%252B%252B%29%2520%252F%252F%2520linie%2520cu%2520linie%250A%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28j%2520%253D%25200%253B%2520j%2520%253C%2520n%253B%2520j%252B%252B%29%2520%252F%252F%2520coloan%25C4%2583%2520cu%2520coloan%25C4%2583%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cin%2520%253E%253E%2520mat%255Bi%255D%255Bj%255D%253B%250A%250A%2520%2520%2520%2520%252F%252F%2520afi%25C8%2599area%2520elementelor%2520matricei%250A%2520%2520%2520%2520for%2520%28i%2520%253D%25200%253B%2520i%2520%253C%2520m%253B%2520i%252B%252B%29%2520%257B%2520%252F%252F%2520linie%2520cu%2520linie%250A%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28j%2520%253D%25200%253B%2520j%2520%253C%2520n%253B%2520j%252B%252B%29%2520%252F%252F%2520coloan%25C4%2583%2520cu%2520coloan%25C4%2583%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%2520%253C%253C%2520mat%255Bi%255D%255Bj%255D%2520%253C%253C%2520%27%2520%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520cout%2520%253C%253C%2520%27%255Cn%27%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520return%25200%253B%250A%257D"
-                            style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                    <div class="card bg-transparent p-4">
+                        <h4 class="py-2"> Parcurgerea unei matrice în C++</h4>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dv2">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="dv2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Parcurgerea unei matrice în C++
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                            <pre>
+/*Pentru a parcurge o matrice linie cu linie și 
+coloană cu coloană (în cadrul fiecărei linii) 
+folosim două for-uri imbricate și doi iteratori:
+i pentru linie și j pentru coloană. 
+Iată un program în C++ care citește și afișează 
+elementele unei matrice cu m linii și n coloane:*/
+#include <.iostream>
+using namespace std;
+
+#define MMAX 314 // numărul maxim de linii
+#define NMAX 618 // numărul maxim de coloane
+
+int m, n; // numărul de linii și numărul de coloane
+int mat[MMAX][NMAX]; // matricea
+
+int main() {
+    int i, j; // iteratorii pentru linie și coloană
+    cin >> m >> n; // citirea dimensiunilor matricei
+
+    // citirea elementelor matricei
+    for (i = 0; i < m; i++) // linie cu linie
+        for (j = 0; j < n; j++) // coloană cu coloană
+            cin >> mat[i][j];
+
+    // afișarea elementelor matricei
+    for (i = 0; i < m; i++) { // linie cu linie
+        for (j = 0; j < n; j++) // coloană cu coloană
+            cout << mat[i][j] << ' ';
+        cout << '\n';
+    }
+    return 0;
+}
+                                            </pre>
+                                        </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
 
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
+                    <div class="card bg-transparent p-4">
                         <h4 class="py-2">Citirea matricelor</h4>
                         <br>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=133%25&si=false&es=4x&wm=false&code=%252F*De%2520regul%25C4%2583%252C%2520elementele%2520matricei%2520se%2520dau%2520%25C3%25AEn%2520ordine%253A%2520de%2520sus%2520%25C3%25AEn%2520jos%2520%25C8%2599i%2520de%2520la%2520st%25C3%25A2nga%2520la%2520dreapta.%2520Citirea%2520presupune%2520nu%2520doar%2520citirea%2520elementelor%2520matricei%252C%2520dar%2520%25C8%2599i%2520citirea%2520dimensiunilor%2520n%2520%25C8%2599i%2520m%253A*%252F%250Acin%2520%253E%253E%2520n%2520%253E%253E%2520m%253B%250Afor%28int%2520i%2520%253D%25200%2520%253B%2520i%2520%253C%2520n%2520%253B%2520i%2520%252B%252B%29%250A%2520%2520%2520%2520for%28int%2520j%2520%253D%25200%2520%253B%2520j%2520%253C%2520m%2520%253B%2520j%2520%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520cin%2520%253E%253E%2520A%255Bi%255D%255Bj%255D%253B"
-                            style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dv3">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="dv3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Citirea matricelor
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                            <pre>
+/*De regulă, elementele matricei se dau în ordine: 
+de sus în jos și de la stânga la dreapta. 
+Citirea presupune nu doar citirea elementelor
+matricei, dar și citirea dimensiunilor n și m:*/
+cin >> n >> m;
+for(int i = 0 ; i < n ; i ++)
+    for(int j = 0 ; j < m ; j ++)
+        cin >> A[i][j];
+                                            </pre>
+                                        </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="col-lg-3">
-                    <div class="card bg-transparent px-4">
+                    <div class="card bg-transparent p-4">
                         <h4 class="py-2">Afişarea matricelor</h4>
                         <br>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=11.5px&lh=133%25&si=false&es=4x&wm=false&code=%252F*%2520Pentru%2520a%2520ob%25C8%259Bine%2520aspectul%2520specific%2520tabloului%2520bidimensional%252C%2520dup%25C4%2583%2520afi%25C8%2599area%2520elementelor%2520de%2520fiecare%2520linie%2520vom%2520trece%2520la%2520linia%2520urm%25C4%2583toare%2520a%2520ecranului.%2520Elementele%2520fiec%25C4%2583rei%2520linii%2520sunt%2520de%2520regul%25C4%2583%2520separate%2520printr-un%2520spa%25C8%259Biu%253A*%252F%250Afor%28int%2520i%2520%253D%25200%2520%253B%2520i%2520%253C%2520n%2520%253B%2520i%2520%252B%252B%29%250A%257B%250A%2520%2520%2520%2520for%28int%2520j%2520%253D%25200%2520%253B%2520j%2520%253C%2520m%2520%253B%2520j%2520%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520cout%2520%253C%253C%2520A%255Bi%255D%255Bj%255D%2520%253C%253C%2520%2522%2520%2522%253B%250A%2520%2520%2520%2520cout%2520%253C%253C%2520%2522%255Cn%2522%253B%250A%257D"
-                            style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dv4">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="dv4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Afişarea matricelor</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                         <pre>
+/* Pentru a obține aspectul specific tabloului
+ bidimensional, după afișarea elementelor de 
+ fiecare linie vom trece la linia următoare 
+ a ecranului. Elementele fiecărei linii sunt 
+ de regulă separate printr-un spațiu:*/
+for(int i = 0 ; i < n ; i ++)
+{
+    for(int j = 0 ; j < m ; j ++)
+        cout << A[i][j] << " ";
+    cout << "\n";
+}
+                                         </pre>
+                                     </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div> <!-- end of row -->
@@ -335,9 +663,7 @@
     <section class="plans d-flex align-items-center py-5" id="algoritmi">
         <div class="container text-light my-5">
             <div class="text-center pb-4">
-                <br>
-                <br>
-                <br>
+
                 <h2 class="py-2">Algoritmi C++<h2>
 
             </div>
@@ -345,11 +671,70 @@
                 <div class="col-lg-6">
                     <div class="card bg-transparent px-4">
                         <h4 class="py-2 mx-auto">Sa se afiseze transpusa unei matrici.</h4>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=133%25&si=false&es=4x&wm=false&code=%252F*%2520Sa%2520se%2520afiseze%2520transpusa%2520unei%2520matrici.*%252F%250A%2523include%2520%253Ciostream%253E%250Ausing%2520namespace%2520std%253B%250Aint%2520main%28%29%250A%257B%250A%2520%2520%2520int%2520n%252Ci%252Cj%252Ca%255B20%255D%255B20%255D%252Cat%255B20%255D%255B20%255D%253B%250A%2520%2520%2520cout%253C%253C%2522n%253D%2522%253Bcin%253E%253En%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253C%2522a%255B%2522%253C%253Ci%253C%253C%2522%255D%255B%2522%253C%253Cj%253C%253C%2522%255D%253D%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cin%253E%253Ea%255Bi%255D%255Bj%255D%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Matricea%2520este%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253Ca%255Bi%255D%255Bj%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520%2520%2520%2520%2520cout%253C%253Cendl%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Matricea%2520transpusa%2520este%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520for%2520%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520at%255Bi%255D%255Bj%255D%253Da%255Bj%255D%255Bi%255D%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253Cat%255Bi%255D%255Bj%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520cout%253C%253Cendl%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520return%25200%253B%250A%257D"
-                            style="width: 100%; height: 500px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pr1">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="pr1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Sa se afiseze transpusa unei
+                                            matrici.</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                    <pre>
+/* Sa se afiseze transpusa unei matrici.*/
+#include <.iostream>
+using namespace std;
+int main()
+{
+   int n,i,j,a[20][20],at[20][20];
+   cout<<"n=";cin>>n;
+   for(i=1;i<=n;i++)
+      for(j=1;j<=n;j++)
+      {
+         cout<<"a["<< i <<"]["<< j <<"]=";
+         cin>>a[i][j];
+      }
+   cout<<"Matricea este:"<< endl;
+   for(i=1;i<=n;i++)
+   {
+      for(j=1;j<=n;j++)
+         cout<< a[i][j]<<" ";
+      cout<< endl;
+   }
+   cout<<"Matricea transpusa este:"<< endl;
+   for(i=1;i<=n;i++)
+   {
+      for (j=1;j<=n;j++)
+      {
+            at[i][j]=a[j][i];
+            cout<< at[i][j]<<" ";
+      }
+      cout<< endl;
+   }
+   return 0;
+}
+                                    </pre>
+                                </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
 
                     </div>
@@ -358,11 +743,104 @@
                 <div class="col-lg-6">
                     <div class="card bg-transparent px-4">
                         <h4 class="py-2 mx-auto">Scrieti un program de generare...</h4>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=133%25&si=false&es=4x&wm=false&code=%252F*Fie%2520n%2520numar%2520natural%2520nenul.%2520Scrieti%2520un%2520program%2520de%2520generare%2520a%250A%2520%2520%2520%2520%2520%2520permutarilor%2520de%2520ordin%2520n%2520a%2520elementelor%2520multimii%2520%257B1%252C%25202%252C%25203%252C...%252C%2520n%257D.%250A%250A%2520EXEMPLU%253A%2520Pentru%2520n%253D3%2520programul%2520va%2520genera%250A%2520%2520%2520%2520%2520%25201%25202%25203%250A%2520%2520%2520%2520%2520%25201%25203%25202%250A%2520%2520%2520%2520%2520%25202%25201%25203%250A%2520%2520%2520%2520%2520%25202%25203%25201%250A%2520%2520%2520%2520%2520%25203%25201%25202%250A%2520%2520%2520%2520%2520%25203%25202%25201%250A%250A%2520SOLUTIE%253A%2520Permutarile%2520de%2520ordin%2520n%2520reprezinta%2520toate%2520posibilitatile%2520de%2520a%250A%2520%2520%2520%2520%2520%2520aranja%2520elementele%2520unei%2520multimi%2520de%2520n%2520elemente.%250A%250A%2520%2520%2520I.%2520Solutia%2520x%255B1%255D......x%255Bn%255D%2520-%2520x%255Bi%255D%2520va%2520avea%2520ca%2520valoare%2520un%2520element%2520al%250A%2520%2520%2520%2520%2520%2520multimii%250A%2520%2520II.%2520x%255Bk%255D%2520poate%2520avea%2520ca%2520valoare%2520orice%2520valoare%2520din%2520intervalul%2520%255B1%252Cn%255D%250A%2520III.%2520Valid%2520-%2520elementele%2520trebuie%2520sa%2520fie%2520distincte%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520x%255Bk%255D%2520trebuie%2520sa%2520fie%2520diferit%2520de%2520x%255B1%255D...x%255Bk-1%255D%250A%250A%2520Implementare*%252F%250A%250A%2523include%253Ciostream%253E%250Ausing%2520namespace%2520std%253B%250A%250Achar%2520sp%255B%255D%253D%2522%2520%2520%2520%2520%2522%253B%250A%250Aint%2520x%255B10%255D%252C%2520n%252C%2520nrsol%253D0%253B%250A%250Avoid%2520Afisare%28%29%250A%257B%2520int%2520i%253B%250A%2520%2520cout%253C%253Csp%253B%250A%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%2520cout%253C%253Cx%255Bi%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520cout%253C%253Cendl%253B%250A%2520%2520nrsol%252B%252B%253B%250A%2520%2520if%2520%28nrsol%252523%253D%253D0%29%2520cin.get%28%29%253B%250A%257D%250A%250Aint%2520Valid%28int%2520k%29%250A%257B%2520int%2520i%253B%250A%2520%2520for%28i%253D1%253Bi%253C%253Dk-1%253Bi%252B%252B%29%250A%2520%2520%2520%2520%2520if%2520%28x%255Bk%255D%253D%253Dx%255Bi%255D%29%2520return%25200%253B%250A%2520%2520return%25201%253B%250A%257D%250A%250Avoid%2520BackRec%28int%2520k%29%250A%257B%2520%2520int%2520i%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%257B%2520x%255Bk%255D%253Di%253B%250A%2520%2520%2520%2520if%2520%28Valid%28k%29%29%250A%2520%2520%2520%2520%2520%2520%2520if%2520%28k%253D%253Dn%29%2520Afisare%28%29%253B%250A%2520%2520%2520%2520%2520%2520%2520else%2520BackRec%28k%252B1%29%253B%250A%2520%2520%2520%2520%2520%257D%250A%257D%250A%250A%250Aint%2520main%28%29%250A%257B%2520cout%253C%253Cendl%253C%253Cendl%253C%253Csp%253C%253C%2522Permutarile%2520primelor%2520n%2520numere%2520naturale%2520%28n%253C10%29%2522%253C%253Cendl%253B%250A%2520%2520cout%253C%253Cendl%253C%253Csp%253C%253C%2522%2520Dati%2520valoarea%2520lui%2520n%253A%2520%2522%253B%2520cin%253E%253En%253B%250A%2520%2520cout%253C%253Cendl%253B%250A%2520%2520BackRec%281%29%253B%250A%2520%2520cout%253C%253Cendl%253C%253Csp%253C%253C%2522Numar%2520solutii%253A%2520%2522%253C%253Cnrsol%253B%250A%2520%2520return%25200%253B%250A%257D"
-                            style="width: 100%; height: 500px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pr2">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="pr2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Scrieti un program de
+                                            generare...</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                  <pre>
+/*Fie n numar natural nenul. Scrieti un program de generare a
+permutarilor de ordin n a elementelor multimii {1, 2, 3,..., n}.
+  
+   EXEMPLU: Pentru n=3 programul va genera
+        1 2 3
+        1 3 2
+        2 1 3
+        2 3 1
+        3 1 2
+        3 2 1
+  
+   SOLUTIE: Permutarile de ordin n reprezinta toate posibilitatile de a
+        aranja elementele unei multimi de n elemente.
+  
+     I. Solutia x[1]......x[n] - x[i] va avea ca valoare un element al
+        multimii
+    II. x[k] poate avea ca valoare orice valoare din intervalul [1,n]
+   III. Valid - elementele trebuie sa fie distincte
+            x[k] trebuie sa fie diferit de x[1]...x[k-1]
+  
+   Implementare*/
+  
+  #include < iostream>
+  using namespace std;
+  
+  char sp[]="    ";
+  
+  int x[10], n, nrsol=0;
+  
+  void Afisare()
+  { int i;
+    cout<< sp;
+    for(i=1;i<=n;i++)
+      cout<< x[i]<<" ";
+    cout<< endl;
+    nrsol++;
+    if (nrsol%23==0) cin.get();
+  }
+  
+  int Valid(int k)
+  { int i;
+    for(i=1;i<=k-1;i++)
+       if (x[k]==x[i]) return 0;
+    return 1;
+  }
+  
+  void BackRec(int k)
+  {  int i;
+     for(i=1;i<=n;i++)
+        { x[k]=i;
+      if (Valid(k))
+         if (k==n) Afisare();
+         else BackRec(k+1);
+       }
+  }
+  
+  
+  int main()
+  { cout<< endl<< endl<< sp<<"Permutarile primelor n numere naturale (n < 10)"<< endl;
+    cout<< endl << sp <<" Dati valoarea lui n: "; cin>>n;
+    cout<< endl;
+    BackRec(1);
+    cout<< endl << sp <<"Numar solutii: "<< nrsol;
+    return 0;
+  }
+                                  </pre>
+                              </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -384,27 +862,160 @@
             </div>
             <div class="row " data-aos="zoom-in">
                 <div class="col-lg-6">
-                    <div class="card bg-transparent px-4">
+                    <div class="card bg-transparent p-4">
                         <h4 class="py-2 mx-auto">Sa se afiseze cate numere ...</h4>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=133%25&si=false&es=4x&wm=false&code=%252F*Sa%2520se%2520afiseze%2520cate%2520numere%2520sunt%2520pozitive%252C%250Anegative%252C%2520respectiv%2520nule%252C%2520intr-o%250Amatrice%2520bidimensionala.*%252F%2520%250A%2523include%2520%253Ciostream%253E%250Ausing%2520namespace%2520std%253B%250Aint%2520main%28%29%250A%257B%250A%2520%2520%2520int%2520n%252Ci%252Cj%252Ca%255B20%255D%255B20%255D%252Cpoz%253D0%252Cneg%253D0%252Czero%253D0%253B%250A%2520%2520%2520cout%253C%253C%2522n%253D%2522%253Bcin%253E%253En%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253C%2522a%255B%2522%253C%253Ci%253C%253C%2522%255D%255B%2522%253C%253Cj%253C%253C%2522%255D%253D%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cin%253E%253Ea%255Bi%255D%255Bj%255D%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Matricea%2520este%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dn%253Bi%252B%252B%29%250A%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253Ca%255Bi%255D%255Bj%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28a%255Bi%255D%255Bj%255D%253C0%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520neg%252B%252B%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520else%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28a%255Bi%255D%255Bj%255D%253E0%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520poz%252B%252B%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520else%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520zero%252B%252B%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520cout%253C%253Cendl%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Matricea%2520contine%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520cout%253C%253Cneg%253C%253C%2522%2520elemente%2520negative%2522%253C%253Cendl%253B%250A%2520%2520%2520cout%253C%253Cpoz%253C%253C%2522%2520elemente%2520pozitive%2522%253C%253Cendl%253B%250A%2520%2520%2520cout%253C%253Czero%253C%253C%2522%2520elemente%2520nule%2522%253C%253Cendl%253B%250A%2520%2520%2520return%25200%253B%250A%257D"
-                            style="width: 100%; height: 500px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
 
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pr3">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="pr3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Sa se afiseze cate numere ...
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                 <pre>
+/*Sa se afiseze cate numere sunt pozitive,
+negative, respectiv nule, intr-o
+matrice bidimensionala.*/ 
+#include <.iostream>
+using namespace std;
+int main()
+{
+   int n,i,j,a[20][20],poz=0,neg=0,zero=0;
+   cout<<"n=";cin>>n;
+   for(i=1;i<=n;i++)
+      for(j=1;j<=n;j++)
+      {
+         cout<<"a["<< i<<"]["<< j<<"]=";
+         cin>>a[i][j];
+      }
+   cout<<"Matricea este:"<< endl;
+   for(i=1;i<=n;i++)
+   {
+      for(j=1;j<=n;j++)
+         {
+            cout<< a[i][j]<<" ";
+            if (a[i][j]< 0)
+               neg++;
+            else
+               if (a[i][j]>0)
+                  poz++;
+               else
+                  zero++;
+         }
+      cout<< endl;
+   }
+   cout<<"Matricea contine:"<< endl;
+   cout<< neg<<" elemente negative"<< endl;
+   cout<< poz<<" elemente pozitive"<< endl;
+   cout<< zero<<" elemente nule"<< endl;
+   return 0;
+}
+                                 </pre>
+                             </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="card bg-transparent px-4">
+                    <div class="card bg-transparent p-4">
                         <h4 class="py-2 mx-auto">Adunarea a doua matrici.</h4>
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%2849%2C139%2C220%2C0%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=133%25&si=false&es=4x&wm=false&code=%2523include%2520%253Ciostream%253E%250Ausing%2520namespace%2520std%253B%250Aint%2520main%28%29%250A%257B%250A%2520%2520%2520int%2520m%252Cn%252Ci%252Cj%252Ca%255B20%255D%255B20%255D%252Cb%255B20%255D%255B20%255D%252Cs%255B20%255D%255B20%255D%253B%250A%2520%2520%2520cout%253C%253C%2522Introduceti%2520dimensiunile%2520celor%25202%2520matrici%2522%253C%253Cendl%253B%250A%2520%2520%2520cout%253C%253C%2522m%253D%2522%253Bcin%253E%253Em%253B%250A%2520%2520%2520cout%253C%253C%2522n%253D%2522%253Bcin%253E%253En%253B%250A%2520%2520%2520cout%253C%253C%2522Introduceti%2520prima%2520matrice%253A%2520%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dm%253Bi%252B%252B%29%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253C%2522a%255B%2522%253C%253Ci%253C%253C%2522%255D%255B%2522%253C%253Cj%253C%253C%2522%255D%253D%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cin%253E%253Ea%255Bi%255D%255Bj%255D%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Introduceti%2520a%2520doua%2520matrice%253A%2520%2522%253C%253Cendl%253B%2520%2520%2520%2520for%28i%253D1%253Bi%253C%253Dm%253Bi%252B%252B%29%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253C%2522b%255B%2522%253C%253Ci%253C%253C%2522%255D%255B%2522%253C%253Cj%253C%253C%2522%255D%253D%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cin%253E%253Eb%255Bi%255D%255Bj%255D%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520s%255Bi%255D%255Bj%255D%253Da%255Bi%255D%255Bj%255D%252Bb%255Bi%255D%255Bj%255D%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Prima%2520matrice%2520este%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dm%253Bi%252B%252B%29%250A%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253Ca%255Bi%255D%255Bj%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520%2520%2520%2520%2520cout%253C%253Cendl%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522A%2520doua%2520matrice%2520este%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dm%253Bi%252B%252B%29%250A%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253Ca%255Bi%255D%255Bj%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520%2520%2520%2520%2520cout%253C%253Cendl%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520cout%253C%253C%2522Suma%2520celor%2520doua%2520matrici%2520este%253A%2522%253C%253Cendl%253B%250A%2520%2520%2520for%28i%253D1%253Bi%253C%253Dm%253Bi%252B%252B%29%250A%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520for%28j%253D1%253Bj%253C%253Dn%253Bj%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520cout%253C%253Cs%255Bi%255D%255Bj%255D%253C%253C%2522%2520%2522%253B%250A%2520%2520%2520%2520%2520%2520cout%253C%253Cendl%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520return%25200%253B%250A%257D"
-                            style="width: 100%; height: 500px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
 
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pr4">
+                            Vizualizeaza
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="pr4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-black">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title " id="exampleModalLabel">Adunarea a doua matrici.</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <code>
+                                 <pre>
+#include <.iostream>
+using namespace std;
+int main()
+{
+   int m,n,i,j,a[20][20],b[20][20],s[20][20];
+   cout<<"Introduceti dimensiunile celor 2 matrici"<< endl;
+   cout<<"m=";cin>>m;
+   cout<<"n=";cin>>n;
+   cout<<"Introduceti prima matrice: "<< endl;
+   for(i=1;i<=m;i++)
+      for(j=1;j<=n;j++)
+      {
+         cout<<"a["<< i<<"]["<< j<<"]=";
+         cin>>a[i][j];
+      }
+   cout<<"Introduceti a doua matrice: "<< endl;    
+   for(i=1;i<=m;i++)
+      for(j=1;j<=n;j++)
+      {
+         cout<<"b["<< i<<"]["<< j<<"]=";
+         cin>>b[i][j];
+         s[i][j]=a[i][j]+b[i][j];
+      }
+   cout<<"Prima matrice este:"<< endl;
+   for(i=1;i<=m;i++)
+   {
+      for(j=1;j<=n;j++)
+         cout<< a[i][j]<<" ";
+      cout<< endl;
+   }
+   cout<<"A doua matrice este:"<< endl;
+   for(i=1;i<=m;i++)
+   {
+      for(j=1;j<=n;j++)
+         cout<< a[i][j]<<" ";
+      cout<< endl;
+   }
+   cout<<"Suma celor doua matrici este:"<< endl;
+   for(i=1;i<=m;i++)
+   {
+      for(j=1;j<=n;j++)
+         cout<< s[i][j]<<" ";
+      cout<< endl;
+   }
+   return 0;
+}
+                                 </pre>
+                             </code>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Închide</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
 
                     </div>
                 </div>
@@ -438,11 +1049,11 @@
 
 
     <!-- Scripts -->
-    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
-    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/bootstrap.js"></script><!-- Bootstrap framework -->
     <script src="./js/script.js"></script> <!-- Custom scripts -->
+
 </body>
 
 </html>
