@@ -9,7 +9,7 @@
     <title>Matrici si vectori</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link href="webfonts/fa-regular-400.woff" rel="stylesheet"> -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/fontawesome-all.min.css" rel="stylesheet">
     <link href="./css/swiper.css" rel="stylesheet">
@@ -40,31 +40,44 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Principala</a>
+                        <a class="nav-link active" aria-current="page" href="index.html#header">Principala</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="dropdown02" data-bs-toggle="dropdown"
-                            aria-expanded="false" href="#">Teorie</a>
+                            aria-expanded="false" href="index.html#">Teorie</a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                            <li><a class="dropdown-item" href="#about">Teorie Vectori</a></li>
+                            <li><a class="dropdown-item" href="index.html#about">Teorie Vectori</a></li>
                             <li>
                                 <div class="dropdown-divider"></div>
                             </li>
-                            <li><a class="dropdown-item" href="#about2">Teorie Matrici</a></li>
+                            <li><a class="dropdown-item" href="index.html#about2">Teorie Matrici</a></li>
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="dropdown03" data-bs-toggle="dropdown"
-                            aria-expanded="false" href="#">Implementarea</a>
+                            aria-expanded="false" href="index.html#">Implementarea</a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                            <li><a class="dropdown-item" href="#services">Implementarea Vectori</a></li>
+                            <li><a class="dropdown-item" href="index.html#services">Implementarea Vectori</a></li>
                             <li>
                                 <div class="dropdown-divider"></div>
                             </li>
-                            <li><a class="dropdown-item" href="#services1">Implementarea Matrici</a></li>
+                            <li><a class="dropdown-item" href="index.html#services1">Implementarea Matrici</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown04" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="exemple.html#">Exemple</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                            <li><a class="dropdown-item" href="exemple.html#vectori">Exemple Vectori</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="exemple.html#matrici">Exemple Matrici</a></li>
 
                         </ul>
                     </li>
@@ -82,10 +95,14 @@
 
     <!-- Home -->
     <section class="home py-5 d-flex align-items-center" id="header">
+
         <div class="container text-light py-5" data-aos="fade-right">
             <h1 class="headline">Matrici <span class="home_text">si</span><br>Vectori</h1>
 
-
+            <br>
+            <h5>Elev: Sviridov Andrei</h5>
+            <h5>Clasa: a XII-a D</h5>
+            <h5>Profesor Coordonator: Costrachevici Elena</h5>
         </div> <!-- end of container -->
     </section> <!-- end of home -->
 
@@ -168,6 +185,41 @@
                     <img class="img-fluid" src="./assets/images/photo2.jpg" alt="about">
                 </div>
             </div> <!-- end of row -->
+            <div class="row d-flex align-items-center my-3">
+
+                <div class="col-lg-4 text-center py-4 py-sm-0" data-aos="fade-down">
+                    <img class="img-fluid" src="./assets/images/teorie_matrici.jpeg" alt="about">
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="card bg-transparent px-4 py-5">
+                        <div class="block d-flex align-items-center">
+                            <h4>
+                                <b>
+                                    Implementarea
+                                </b>
+                                <br>
+                                > Diagonala principală, diagonala secundară în exemplul lateral.
+                                <br>
+                                Dacă ne aflăm pe diagonala principală, atunci elementele de pe aceasta pot fi accesate
+                                direct folosind o singură repetiţie:
+                                <b> for(i=1;i<=n;i++). </b> <br>
+                                        În acest caz, îl vom prelucra pe a[i][i]. Deasupra diagonalei principale i < j.
+                                            Pe diagonala secundară observăm că: Dacă i=1 atunci j=n, dacă i=2 atunci
+                                            j=n-1 şi aşa mai departe. Dacă punem una din aceste situaţii sub forma unui
+                                            sistem si dacă adunăm membru cu membru, reiese următoarea formulă: i+j=n+1.
+                                            Din aceasta rezultă că j=n+1-i. 
+                                            <br>
+                                            În concluzie, dacă folosim această formulă,
+                                            pe diagonala secundară îl vom prelucra pe a[i][n+1-i]. Ca şi pe diagonala
+                                            principală vom avea unul şi acelaşi for: for(i=1;i<=n;i++) Suma elementelor
+                                            de pe diagonala prinicipala a unei matrice patratice C++ </h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end of row -->
+
         </div> <!-- end of container -->
     </section> <!-- end of about -->
 
@@ -1015,7 +1067,7 @@ int main()
                             </div>
                         </div>
 
-                        
+
 
                     </div>
                 </div>
