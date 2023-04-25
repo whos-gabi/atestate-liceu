@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <title>BMW - Atestat</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+Í
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-car me-3 text-primary"></i>
+                B<span class="text-blue">M</span><span class="text-secondary">W</span></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html#" class="nav-item nav-link active">Acasă</a>
+                <a href="#despre" class="nav-item nav-link">Despre</a>
+                <div class="nav-item dropdown">
+                    <a href="#masini" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mașini</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="#e36" class="dropdown-item">BMW E36</a>
+                        <a href="#e46" class="dropdown-item">BMW E46</a>
+                        <a href="#seria1" class="dropdown-item">BMW Seria 1</a>
+                        <a href="#seria5" class="dropdown-item">BMW Seria 5</a>
+                        <a href="#seria6" class="dropdown-item">BMW Seria 6</a>
+                        <a href="#x5" class="dropdown-item">BMW X5</a>
+                        <a href="#x6" class="dropdown-item">BMW X6</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#motociclete" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Motociclete</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="#S1000RR" class="dropdown-item">BMW S1000RR</a>
+                        <a href="#M1000RR" class="dropdown-item">BMW M1000RR</a>
+                        <a href="#S1000R" class="dropdown-item">BMW S1000R</a>
+                        <a href="#R1250GS" class="dropdown-item">BMW R1250GS</a>
+                        <a href="#C400GT" class="dropdown-item">BMW C400 GT</a>
+                        <a href="#RnineT" class="dropdown-item">BMW R nineT</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#autor" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Autor</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carouselbg1.webp" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">autor: Fecioru
+                                        George-Cosmin</h6>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">prof.: Ene Dumitru
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">BMW</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Vezi mai multe<i
+                                            class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/bmw1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carouselbg2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">autor: Fecioru
+                                        George-Cosmin</h6>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">prof.: Ene Dumitru
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">BMW</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Vezi mai multe<i
+                                            class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/bmw2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carouselbg3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">autor: Fecioru
+                                        George-Cosmin</h6>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">prof.: Ene Dumitru
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">BMW</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Vezi mai multe<i
+                                            class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/bmw3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="despre">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <div class="ps-4">
+                            <h2 class="mb-3">Istoria BMW</h2>
+                            <p>BMW este o companie germană producătoare de automobile, motociclete și motoare, fondată
+                                în 1916. BMW a devenit unul dintre cei mai renumiți producători de mașini și motociclete
+                                de lux din lume, cu o istorie bogată și inovatoare.</p>
+                            <p>BMW a fost fondată sub numele de Bayerische Flugzeugwerke AG (BFW) în 1916, ca urmare a
+                                eforturilor unui grup de investitori, printre care se număra și un inginer numit Karl
+                                Rapp. În primii ani, BFW a produs motoare de avion pentru armata germană în timpul
+                                Primului Război Mondial. După încheierea războiului, producția de motoare de avion a
+                                fost interzisă, iar compania s-a reorientat spre producția de motociclete.
+                            </p>
+                            <p>În 1922, BFW a fost redenumită Bayerische Motoren Werke GmbH, cunoscută și sub numele de
+                                BMW. În anii '30, BMW a început să producă automobile de lux, cu modele precum BMW 303
+                                și BMW 328. În timpul celui de-al Doilea Război Mondial, BMW a produs în principal
+                                motoare pentru avioane și submarine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex py-5 px-4">
+                        <div class="ps-4 mt-4">
+                            <!-- <h5 class="mb-3">Istoria </h5> -->
+                            <p>După război, fabrica BMW din orașul Dingolfing a fost demolată și producția a fost mutată
+                                la München. În anii '50, BMW a început să producă motociclete și mașini de înaltă
+                                performanță, precum BMW 507 și BMW 600. În anii '60, BMW a devenit cunoscută pentru
+                                modelele sale sportive, cum ar fi BMW 2002 și BMW 3.0 CSL.</p>
+                            <p>În anii '70, BMW a cumpărat producătorul de automobile britanic Rover, devenind astfel
+                                unul dintre cei mai mari producători de automobile din lume. Cu toate acestea, achiziția
+                                s-a dovedit a fi o mișcare nepotrivită și BMW a fost nevoită să vândă divizia de
+                                automobile a Rover în 2000.
+                            </p>
+                            <p>În prezent, BMW produce o gamă largă de automobile și motociclete de înaltă performanță,
+                                printre care se numără modele precum BMW Seria 3, BMW Seria 5, BMW Seria 7, BMW X5, BMW
+                                X6 și BMW i8. Compania are o reputație puternică în domeniul inovației tehnologice,
+                                dezvoltând și implementând tehnologii precum sistemul de propulsie electrică BMW eDrive
+                                și sistemul de asistență pentru șofer BMW Personal CoPilot.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row" id="masini">
+        <div class="col-lg-12 wow fadeIn">
+            <div class="section-title text-center text-primary" data-wow-delay="0.1s">
+                <h1 class="mb-4"><span class="text-primary">Mașini</span> </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="e46">
+        <div class="container">
+            <div class="row g-5 wow fadeInLeft">
+
+                <div class="col-lg-6">
+                    <h1>BMW E46</h1>
+                    <p class="mb-4">BMW E46 este un model de mașină produs de BMW între anii 1998 și 2006. Este a patra
+                        generație din seria 3 și a fost construită în două variante de caroserie: sedan și coupe. E46 a
+                        fost un model popular și apreciat în lumea auto, cu o gamă largă de opțiuni de motorizare,
+                        începând cu motoarele cu 4 cilindri și ajungând până la motoarele V8.
+
+                    </p>
+                    <p>Una dintre caracteristicile deosebite ale modelului E46 este sistemul de suspensie, care oferă o
+                        manevrabilitate excelentă și o conducere sportivă. Mașina dispune de o transmisie manuală cu 5
+                        sau 6 trepte sau de o transmisie automată cu 4 sau 5 trepte.
+                    </p>
+                    <p>
+                        În ceea ce privește designul, E46 a fost creat cu un aspect elegant și modern, cu linii fluide
+                        și agresive. Interiorul este de asemenea bine realizat, cu materiale de calitate și dotări
+                        moderne.
+                    </p>
+                    <p>
+                        E46 a avut și un impact semnificativ asupra comunității de tuning auto, fiind un model popular
+                        pentru îmbunătățiri de performanță și modificări estetice. În general, BMW E46 este un model
+                        apreciat de șoferi pentru performanțele sale, manevrabilitate și designul atrăgător.</p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/e46.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">E46</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5" id="e36">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/e36.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">E36</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW E36</h1>
+                    <p class="mb-4">BMW E36 este un model de mașină produs de BMW în perioada 1990-2000, fiind al
+                        treilea model din seria 3. Această mașină a fost o îmbunătățire semnificativă față de
+                        predecesorul său, BMW E30, și a devenit un model popular printre entuziaștii de mașini.
+
+
+                    </p>
+                    <p>BMW E36 a fost disponibil într-o gamă largă de opțiuni de motorizare, începând cu motoarele cu 4
+                        cilindri și ajungând până la motoarele cu 6 cilindri, cu o putere cuprinsă între 90 CP și 321
+                        CP. Aceasta dispune de o transmisie manuală sau automată cu 4 sau 5 trepte, în funcție de
+                        opțiunea aleasă.
+                    </p>
+                    <p>
+                        Mașina oferă o experiență de conducere dinamică și manevrabilitate excelentă, datorită
+                        suspensiei și direcției precis reglate. Designul BMW E36 este clasic și elegant, cu linii fluide
+                        și o siluetă aerodinamică.
+
+                    </p>
+                    <p>
+                        BMW E36 a fost un model popular pentru tunere, oferind o gamă largă de opțiuni pentru
+                        îmbunătățiri de performanță și modificări estetice. În general, BMW E36 este apreciat pentru
+                        performanțele excelente și manevrabilitatea sportivă, precum și pentru fiabilitatea și
+                        durabilitatea sa, fiind încă o alegere populară printre iubitorii de mașini mai vechi.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="seria1">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW Seria 1</h1>
+                    <p class="mb-4">BMW Seria 1 este un model de mașină compactă produs de BMW începând cu anul 2004.
+                        Aceasta a fost dezvoltată ca o alternativă mai accesibilă la modelele mai mari din gama BMW.
+                        Seria 1 este disponibilă în trei variante de caroserie: hatchback cu trei și cinci uși și coupe
+                        cu două uși.
+                    </p>
+                    <p>Mașina este disponibilă într-o gamă largă de opțiuni de motorizare, începând cu motoarele cu 3
+                        cilindri și ajungând până la motoarele cu 6 cilindri, cu o putere cuprinsă între 109 CP și 335
+                        CP. Seria 1 dispune de o transmisie manuală sau automată cu 6 sau 8 trepte, în funcție de
+                        opțiunea aleasă.
+                    </p>
+                    <p>
+                        În ceea ce privește designul, BMW Seria 1 are un aspect modern și sportiv, cu linii fluide și un
+                        interior bine realizat, cu materiale de calitate și dotări tehnologice moderne. Mașina oferă o
+                        experiență de conducere dinamică și o manevrabilitate excelentă, fiind potrivită pentru șoferii
+                        care apreciază performanțele și confortul.
+                    </p>
+                    <p>
+                        Seria 1 a fost, de asemenea, un model popular pentru tunere, oferind o gamă largă de opțiuni
+                        pentru îmbunătățiri de performanță și modificări estetice. În general, BMW Seria 1 este un model
+                        apreciat pentru calitatea construcției, performanțele excelente și designul atractiv.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/seria1.png"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">Seria 1</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5" id="seria5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/seria5.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">Seria 5</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW Seria 5</h1>
+                    <p class="mb-4">BMW Seria 5 este o linie de mașini de lux produse de BMW începând cu anul 1972.
+                        Aceasta este disponibilă în mai multe variante, inclusiv sedan, touring și gran turismo. Modelul
+                        a ajuns la a șaptea generație în prezent și este considerat unul dintre cele mai bine vândute
+                        modele ale BMW.
+                    </p>
+                    <p>Designul BMW Seria 5 este elegant și aerodinamic, cu linii fluide și faruri LED ascuțite.
+                        Interiorul este spațios și sofisticat, cu o gamă largă de dotări tehnologice, inclusiv sistem de
+                        navigație, infotainment, cameră de vedere spate și multe altele.
+                    </p>
+                    <p>
+                        Performanțele BMW Seria 5 sunt excelente, datorită unei game largi de opțiuni de motorizare,
+                        care încep de la motoare cu 4 cilindri și ajung până la motoare V8. Transmisia poate fi manuală
+                        sau automată cu 8 trepte, în funcție de opțiunea aleasă. Mașina oferă o experiență de conducere
+                        dinamică și manevrabilitate excelentă, datorită sistemului de suspensie reglabil și direcției
+                        precise.
+                    </p>
+                    <p>
+                        BMW Seria 5 este o mașină populară în rândul șoferilor care caută un amestec de lux, performanțe
+                        și confort, oferind un compromis excelent între eleganță și performanță.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="seria6">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW Seria 6</h1>
+                    <p class="mb-4">BMW Seria 6 este un model de mașină de lux produs de BMW începând cu anul 2004. Este
+                        disponibil în două variante de caroserie: coupe și cabrio. Seria 6 este un model elegant și
+                        sportiv, cu linii fluide și agresive și un design premium.
+                    </p>
+                    <p>Mașina este disponibilă într-o gamă largă de opțiuni de motorizare, începând cu motoarele cu 6
+                        cilindri și ajungând până la motoarele V8 și V12, cu o putere cuprinsă între 313 CP și 600 CP.
+                        Seria 6 dispune de o transmisie automată cu 8 trepte și de sistemul de tracțiune integrală
+                        xDrive, care îmbunătățește manevrabilitatea și performanțele pe teren accidentat.
+                    </p>
+                    <p>
+                        Interiorul este realizat din materiale de înaltă calitate și dispune de o gamă largă de dotări
+                        tehnologice, cum ar fi un sistem de divertisment cu ecran tactil, sistem audio de înaltă
+                        performanță și un sistem de navigație avansat.
+                    </p>
+                    <p>
+                        Seria 6 este un model apreciat pentru performanțele sale excelente, manevrabilitatea sportivă și
+                        luxul oferit. Este un model popular și în comunitatea de tuning auto, oferind o gamă largă de
+                        opțiuni pentru îmbunătățiri de performanță și modificări estetice. În general, BMW Seria 6 este
+                        o mașină de lux și sportivă, care oferă o experiență de conducere deosebită.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/seria6.webp"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">Seria 6</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="x5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/x5.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">X5</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW X5</h1>
+                    <p class="mb-4">BMW X5 este un SUV de lux produs de BMW începând cu anul 1999. Este disponibil în
+                        mai multe variante de motorizare, transmisie și tracțiune, începând de la modele cu tracțiune
+                        față și terminând cu modele cu tracțiune integrală și motoare V8 sau plug-in hybrid.
+                    </p>
+                    <p>Designul exterior al lui BMW X5 este robust și sportiv, cu o grilă frontală impresionantă și
+                        faruri LED ascuțite. Interiorul este spațios și elegant, cu o gamă largă de opțiuni pentru
+                        tapițerie și finisaje. Mașina dispune de o gamă largă de dotări tehnologice, inclusiv un sistem
+                        de infotainment cu ecran tactil, sistem audio de înaltă performanță și un sistem de navigație
+                        avansat.
+                    </p>
+                    <p>
+                        Performanțele BMW X5 sunt excelente, datorită motoarelor puternice și transmisiei automate cu 8
+                        trepte. Mașina oferă o experiență de conducere dinamică și manevrabilitate excelentă, cu un
+                        sistem de suspensie reglabil care îmbunătățește confortul și manevrabilitatea.
+                    </p>
+                    <p>
+                        BMW X5 este un model popular pentru cei care caută un SUV de lux cu performanțe excelente și un
+                        design impresionant. Este o mașină de familie potrivită pentru cei care doresc să combine luxul,
+                        performanțele și confortul într-un singur vehicul.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5" id="x6">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW X6</h1>
+                    <p class="mb-4">BMW X6 este un crossover de lux produs de BMW începând cu anul 2008. Este disponibil
+                        în mai multe variante de motorizare, transmisie și tracțiune, începând de la modele cu tracțiune
+                        față și terminând cu modele cu tracțiune integrală și motoare V8.
+                    </p>
+                    <p>
+                        Designul exterior al lui BMW X6 este impresionant și agresiv, cu o grilă frontală mare și faruri
+                        LED ascuțite. Interiorul este elegant și spațios, cu o gamă largă de opțiuni pentru tapițerie și
+                        finisaje. Mașina dispune de o gamă largă de dotări tehnologice, inclusiv un sistem de
+                        infotainment cu ecran tactil, sistem audio de înaltă performanță și un sistem de navigație
+                        avansat.
+                    </p>
+                    <p>
+                        Performanțele BMW X6 sunt excelente, datorită motoarelor puternice și transmisiei automate cu 8
+                        trepte. Mașina oferă o experiență de conducere dinamică și manevrabilitate excelentă, cu un
+                        sistem de suspensie reglabil care îmbunătățește confortul și manevrabilitatea.
+                    </p>
+                    <p>
+                        BMW X6 este un model popular pentru cei care caută un SUV de lux cu performanțe excelente și un
+                        design impresionant. Este o mașină potrivită pentru cei care doresc să combine luxul,
+                        performanțele și confortul într-un singur vehicul, dar și pentru cei care caută un crossover de
+                        lux cu o personalitate unică.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/masini/x6.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">X6</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" id="motociclete">
+        <div class="col-lg-12 wow fadeIn">
+            <div class="section-title text-center text-primary" data-wow-delay="0.1s">
+                <h1 class="mb-4"><span class="text-primary">Motociclete</span> </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5" id="S1000RR">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/motociclete/S1000RR.webp"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">S1000RR</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW S1000RR</h1>
+                    <p class="mb-4">BMW S1000RR este o motocicletă sportivă produsă de BMW Motorrad începând cu anul
+                        2009. Este una dintre cele mai populare motociclete sportive din lume, datorită performanțelor
+                        excelente și designului agresiv. Motocicleta este disponibilă în mai multe variante de
+                        motorizare, transmisie și dotări tehnologice.
+                    </p>
+                    <p>
+                        Motorul BMW S1000RR este unul dintre cele mai puternice de pe piață, cu o putere maximă de 207
+                        CP. Această putere este obținută datorită sistemului de injecție electronică, a sistemului de
+                        admisie variabil și a sistemului de evacuare optimizat. Motocicleta dispune de o transmisie cu
+                        șase trepte și un sistem de frânare performant.
+                    </p>
+                    <p>
+                        Designul exterior al BMW S1000RR este impresionant, cu linii agresive și faruri cu tehnologie
+                        LED. Motocicleta dispune de un cadru din aluminiu, care îmbină rigiditatea și manevrabilitatea
+                        excelentă.
+                    </p>
+                    <p>
+                        BMW S1000RR este o motocicletă sportivă potrivită pentru cei care doresc performanțe excelente,
+                        manevrabilitate și un design impresionant. Este o mașină potrivită pentru cei care doresc să
+                        experimenteze viteza și adrenalină, dar și pentru cei care doresc să își îmbunătățească
+                        abilitățile de conducere. De asemenea, este populară în competițiile de motociclism din întreaga
+                        lume, datorită performanțelor sale excelente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="M1000RR">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW M1000RR</h1>
+                    <p class="mb-4">BMW M1000RR este un model de motocicletă sportivă de înaltă performanță produsă de
+                        BMW Motorrad, lansat în anul 2021. Această motocicletă este o variantă îmbunătățită a modelului
+                        S1000RR, cu o gamă largă de dotări tehnologice și performanțe superioare.
+                    </p>
+                    <p>
+                        Motorul BMW M1000RR este un motor de 4 cilindri în linie cu o capacitate de 999 cmc, care oferă
+                        o putere maximă de 212 CP la 14.500 rpm. Acest motor este echipat cu un sistem de admisie
+                        optimizat, care oferă o curgere mai bună a aerului și o performanță superioară. De asemenea,
+                        motocicleta dispune de o transmisie cu șase trepte și un sistem de frânare performant.
+                    </p>
+                    <p>
+                        Designul exterior al BMW M1000RR este similar cu cel al modelului S1000RR, dar cu accente
+                        speciale de culoare M. Motocicleta este echipată cu o gamă largă de dotări tehnologice, precum
+                        sistemul de control electronic al suspensiei și sistemul de control al tracțiunii.
+                    </p>
+                    <p>
+                        BMW M1000RR este o motocicletă sportivă de înaltă performanță, potrivită pentru cei care doresc
+                        performanțe excelente și manevrabilitate superioară. Este populară în competițiile de
+                        motociclism din întreaga lume, datorită performanțelor sale excelente și a dotărilor tehnologice
+                        de ultimă generație.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/motociclete/M1000RR.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">M1000RR</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="S1000R">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/motociclete/S1000R.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">S1000R</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW S1000R</h1>
+                    <p class="mb-4">BMW S1000R este o motocicletă naked sportivă produsă de BMW Motorrad, lansată în
+                        anul 2014. Această motocicletă este o versiune naked a modelului BMW S1000RR, cu un design
+                        agresiv și performanțe excelente.
+                    </p>
+                    <p>
+                        Motorul BMW S1000R este un motor de 4 cilindri în linie cu o capacitate de 999 cmc, care oferă o
+                        putere maximă de 165 CP la 11.000 rpm. Acest motor este echipat cu un sistem de injecție
+                        electronică și un sistem de admisie variabil, care oferă o performanță excelentă și o economie
+                        de combustibil mai bună. De asemenea, motocicleta dispune de o transmisie cu șase trepte și un
+                        sistem de frânare performant.
+                    </p>
+                    <p>
+                        Designul exterior al BMW S1000R este similar cu cel al modelului S1000RR, dar cu un aspect mai
+                        sportiv și agresiv. Motocicleta este echipată cu un cadru din aluminiu, care oferă o rigiditate
+                        excelentă și o manevrabilitate superioară.
+                    </p>
+                    <p>
+                        BMW S1000R este o motocicletă naked sportivă potrivită pentru cei care doresc performanțe
+                        excelente și un design agresiv. Este o mașină potrivită pentru cei care doresc să experimenteze
+                        viteza și adrenalină, dar și pentru cei care doresc să se bucure de o experiență de conducere
+                        sportivă.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="R1250GS">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW R1250GS</h1>
+                    <p class="mb-4">BMW R1250GS Adventure este o motocicletă de aventură produsă de BMW Motorrad,
+                        lansată în anul 2019. Această motocicletă este o versiune îmbunătățită a modelului BMW R1200GS
+                        Adventure, cu performanțe excelente și o gamă largă de dotări tehnologice.
+                    </p>
+                    <p>
+                        Motorul BMW R1250GS Adventure este un motor boxer de 2 cilindri cu o capacitate de 1254 cmc,
+                        care oferă o putere maximă de 136 CP la 7750 rpm. Acest motor este echipat cu un sistem de
+                        injecție electronică și un sistem de admisie variabil, care oferă o performanță excelentă și o
+                        economie de combustibil mai bună. De asemenea, motocicleta dispune de o transmisie cu șase
+                        trepte și un sistem de frânare performant.
+                    </p>
+                    <p>
+                        Designul exterior al BMW R1250GS Adventure este similar cu cel al modelului BMW R1200GS
+                        Adventure, dar cu o serie de îmbunătățiri tehnice și estetice. Motocicleta este echipată cu un
+                        sistem de suspensie optimizat, care oferă o manevrabilitate excelentă pe teren accidentat și un
+                        nivel ridicat de confort pentru pasageri.
+                    </p>
+                    <p>
+                        BMW R1250GS Adventure este o motocicletă de aventură puternică și fiabilă, potrivită pentru cei
+                        care doresc să exploreze terenuri accidentate sau să efectueze călătorii lungi pe distanțe mari.
+                        Este populară în rândul motocicliștilor de aventură din întreaga lume, datorită performanțelor
+                        sale excelente și a dotărilor tehnologice de ultimă generație.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/motociclete/R1250GS.webp"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">R1250GS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="C400GT">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/motociclete/C400GT.webp"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">C400 GT</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW C400 GT</h1>
+                    <p class="mb-4">BMW C400 GT este un scuter produsă de BMW Motorrad, lansată în anul 2019. Aceast
+                        scuter este potrivit pentru deplasarea în oraș și pentru călătoriile scurte, fiind caracterizat
+                        prin confort, manevrabilitate și performanțe excelente.
+                    </p>
+                    <p>
+                        Motorul BMW C400 GT este un motor de un cilindru cu o capacitate de 350 cmc, care oferă o putere
+                        maximă de 34 CP la 7.500 rpm. Acest motor este echipat cu un sistem de injecție electronică și
+                        un sistem de admisie variabil, care oferă o performanță excelentă și o economie de combustibil
+                        mai bună. De asemenea, scuterul dispune de o transmisie cu variator continuu și un sistem de
+                        frânare performant.
+                    </p>
+                    <p>
+                        Designul exterior al BMW C400 GT este elegant și practic, fiind echipat cu un parbriz înalt și
+                        un scaun confortabil, care oferă o poziție ergonomică de conducere. Scuterul este echipat cu un
+                        sistem de suspensie optimizat, care oferă o manevrabilitate excelentă pe drumurile din oraș și o
+                        stabilitate crescută la viteze mari.
+                    </p>
+                    <p>
+                        BMW C400 GT este un scuter potrivit pentru deplasarea în oraș, fiind popular printre
+                        motocicliștii urbani din întreaga lume. Este caracterizat prin confort, manevrabilitate și
+                        performanțe excelente, fiind o alegere excelentă pentru cei care doresc să se deplaseze rapid și
+                        confortabil prin aglomerația urbană.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5" id="RnineT">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-6 fadeInRight">
+                    <h1>BMW R nineT</h1>
+                    <p class="mb-4">BMW R nineT este o motocicletă de inspirație retro, produsă de BMW Motorrad și
+                        lansată în anul 2014. Această motocicletă este caracterizată prin unicitate, personalizare și
+                        performanță, oferind o experiență de conducere excelentă.
+                    </p>
+                    <p>
+                        Motorul BMW R nineT este un motor boxer de doi cilindri, cu o capacitate de 1.170 cmc, care
+                        oferă o putere maximă de 110 CP la 7.750 rpm. Acest motor este echipat cu un sistem de injecție
+                        electronică și un sistem de răcire cu aer, care oferă o performanță excelentă și o economie de
+                        combustibil mai bună. De asemenea, motocicleta dispune de o transmisie cu șase viteze și un
+                        sistem de frânare performant.
+                    </p>
+                    <p>
+                        Designul exterior al BMW R nineT este inspirat de motocicletele clasice, fiind caracterizat prin
+                        linii curate, materiale de calitate și detalii rafinate. Motocicleta este echipată cu o gamă
+                        largă de accesorii și opțiuni de personalizare, ceea ce permite fiecărui proprietar să își
+                        personalizeze motocicleta după propriul gust.
+                    </p>
+                    <p>
+                        BMW R nineT este o motocicletă excelentă pentru cei care doresc să aibă o experiență de
+                        conducere unică, cu un aspect retro și performanțe excelente. Este potrivită pentru călătorii
+                        lungi sau pentru plimbările scurte în oraș, oferind un confort și o manevrabilitate excelentă.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/motociclete/RnineT.avif"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h4 class="text-white">R nineT</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" id="autor">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+
+                <div class="col-lg-6 col-md-12 text-center">
+                    <h1 class="text-blue">BMW</h1>
+                    <h4 class="text-primary mb-4">Autor: Fecioru George-Cosmin</h4>
+                    <h4 class="text-light mb-4">Profesor: Ene Dumitru</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-3 mb-md-0 ">
+                        &copy; <a class="border-bottom" href="#">Colegiul Național de Informatică</a> - Fecioru George-Cosmin.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
