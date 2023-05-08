@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Puppies</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="logo.html" class="logo">Logo</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="breeds.html">Breeds</a></li>
+            <li><a href="training.html">Trainig</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Find your dream puppy</h2>
+        <a href="#sec" id="btn">Exlplore</a>
+        <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+
+        <h2>Why Are Dogs Called Man’s Best Friend?</h2>
+        <p>Through the ages, people have claimed dogs as one of their closest, and best, companions. Of all the
+            domesticated animals, dogs serve the widest array of roles: protector, helper, lifesaver, and companion.
+            Dogs are incredible friends to people, and they’ve been companions through centuries. The relationship
+            between dogs and people is deep and old.<br><br>
+            Dogs and people began living together 15,000 years ago when dogs followed people’s migration throughout East
+            Asia. The connection was natural because both people and dogs are social beings. Neither can thrive when
+            alone, and both benefit mentally (and often physically) from strong social bonds.<br><br>
+            Though domestic dogs share 99% of their DNA with wolves, dogs exude warmth to other dogs and humans that
+            contrasts greatly with a wolf’s skeptical and defensive reaction to others. Dogs are social pack animals who
+            thrive off of attention and affection, making them a prime candidate for a person’s best friend.<br><br>
+            Since dogs have been domesticated to a point where they need us to survive, and we tend to find that we need
+            them almost as much, people and dogs developed a symbiotic relationship. Most dog owners will tell you that
+            their dog is a family member. And having a faithful dog at home gives us a listening ear, a warm paw to
+            hold, and even strong legs to run beside.<br><br> </p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/puppy.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2>Where did the phrase “man’s best friend” come from?</h2>
+                <p>In fact, the phrase “man’s best friend” originated in the American Supreme Court in 1870 when a
+                    talented
+                    lawyer named George Graham Vest defended a man who deeply loved his coon hound named Old Drum. Vest
+                    argued
+                    that when a neighbor killed Old Drum for trespassing, the neighbor took the life of more than just a
+                    pet—he
+                    killed an important family member.<br><br>
+                    Vest famously stated, “The one absolute, unselfish friend that man can have in this selfish
+                    world—the one
+                    that never proves ungrateful or treacherous—is his dog.”<br><br></p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Much more than a pet</h2>
+                <p>Dogs have proven themselves time and again to be loyal, kind, understanding, and have an indomitable
+                    spirit.
+                    They greet us happily after what may have been the worst day of our lives and make us feel better
+                    with a wag
+                    of their tail and a playful grin.<br><br>
+                    Whether they’re herding sheep, hunting game, supporting people with disabilities, or simply acting
+                    as a
+                    companion unlike any other, dogs help humans with day-to-day tasks, many of which may not be
+                    possible
+                    without them. Dating back to the 16th century, dogs have served as service helpers for the blind,
+                    and by the
+                    1970s dog trainers developed techniques for dogs to assist people with disabilities.<br><br>
+                    As if those duties aren’t enough, dogs also help prevent possible crimes and save lives, as in the
+                    cases of
+                    drug-sniffing and bomb-sniffing canines. German shepherds, a 200-year-old breed, are most commonly
+                    seen
+                    serving as canine police all around the world.<br><br></p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/puppy1.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+        <h2>Want to live a healthier life? Maybe you should get a dog.</h2>
+        <p>As companions, the health benefits of living with a dog have been well-documented in many scientific studies.
+            As reported in a recent Time Magazine article, the health benefits of living with a dog include:<br></p>
+        <ul>
+            <li>links to a longer life span</li>
+            <li>lower risk of cardiovascular disease</li>
+            <li>reduce the adverse health effect of living alone</li>
+            <li>can decrease allergies and asthma in children</li>
+            <li>increase opportunities for health-beneficial socialization</li>
+        </ul>
+        <p>The study’s author emphasized that these health benefits are only applicable if the dog is well-exercised and
+            cared for. Even if dogs didn’t provide direct health benefits, the unconditional love and companionship they
+            offer is invaluable. They’re at our sides when we’re sick, sad, and lonely. They love us even when we are
+            grumpy, rude, or downright bummers. Dogs are the ones who seem to understand us on a level even we cannot
+            fathom.<br><br>
+            The truth is: we call dogs our best friends because, in most of the ways that matter, they are. As dogs and
+            humans have developed a deep relationship over thousands of years, dogs have become part of our families. We
+            take pride in our dogs, and sometimes show them off to others as we would our children. We play with them,
+            hold them close, and rely on them for services they have evolved to provide and enjoy doing.<br><br>
+            Often, dogs truly deserve their status as a person’s best friend.<br><br></p>
+    </div>
+
+
+
+</body>
+
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+
+<script src="vendors/js/bootstrap.min.js"></script>
+
+
+
+</html>

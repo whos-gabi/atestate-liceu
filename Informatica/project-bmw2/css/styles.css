@@ -11120,6 +11120,10 @@ body {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #4599FE;
   }
+  .featured-text-r{
+    padding: 0 2rem 0 0;
+    border-right: 0.5rem solid #4599FE;
+  }
 }
 .projects-section .project-text {
   padding: 3rem;

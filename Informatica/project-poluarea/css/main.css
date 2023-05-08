@@ -120,8 +120,8 @@ header {
 .footer {
 	background: #E64129;
 	color: white;
-	height: 50px;
-	font-size: 1.4em;
+	height: 100px;
+	font-size: 1.1em;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atestat</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="proiect">
+  <div class="titlu">Calculator & Grapher</div>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <table>
+      <tr>
+        <td><button onclick="display('7')">7</button></td>
+        <td><button onclick="display('8')">8</button></td>
+        <td><button onclick="display('9')">9</button></td>
+        <td><button onclick="clearResult()">C</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="display('4')">4</button></td>
+        <td><button onclick="display('5')">5</button></td>
+        <td><button onclick="display('6')">6</button></td>
+        <td><button onclick="display('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="display('1')">1</button></td>
+        <td><button onclick="display('2')">2</button></td>
+        <td><button onclick="display('3')">3</button></td>
+        <td><button onclick="display('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="display('0')">0</button></td>
+        <td><button onclick="display('*')">*</button></td>
+        <td><button onclick="display('/')">/</button></td>
+        <td><button onclick="calculate()">=</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+  <div id="graph">
+    <label for="a">Enter the value of a:</label>
+    <input type="text" id="a"><br><br>
+		<label for="b">Enter the value of b:</label>
+		<input type="text" id="b"><br><br>
+    <label for="c">Enter the value of c:</label>
+    <input type="text" id="c"><br><br>
+    <button onclick="graph()">Graph</button>
+    <script src="grapher.js"></script>
+  </div>
+</body>
+</html>
